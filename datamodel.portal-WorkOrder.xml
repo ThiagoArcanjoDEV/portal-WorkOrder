@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
+	<comment><![CDATA[/**
+					   * Data Model file
+					   * @copyright   Copyright (C) 2015 ThiagoArcanjo
+					   * @license     http://opensource.org/licenses/AGPL-3.0
+					   */
+				]]>
+	</comment>
+	<constants>
+		<constant id="PORTAL_WORKORDER_PUBLIC_LOG" xsi:type="string" _delta="define"><![CDATA[public_log]]></constant>
+		<constant id="PORTAL_WORKORDER_USER_COMMENT" xsi:type="string" _delta="define"><![CDATA[user_comment]]></constant>
+		<constant id="PORTAL_WORKORDER_LIST_ZLIST" xsi:type="string" _delta="define"><![CDATA[status,description,ticket_id,team_id,agent_id,agent_email,start_date,end_date,log]]></constant>
+		<constant id="PORTAL_WORKORDER_CLOSED_ZLIST" xsi:type="string" _delta="define"><![CDATA[status,description,ticket_id,team_id,agent_id,agent_email,start_date,end_date,log]]></constant>
+		<constant id="PORTAL_WORKORDER_DETAILS_ZLIST" xsi:type="string" _delta="define"><![CDATA[status,description,ticket_id,team_id,agent_id,agent_email,start_date,end_date,log]]></constant>
+		<constant id="PORTAL_WORKORDER_DISPLAY_QUERY" xsi:type="string" _delta="define"><![CDATA[SELECT WorkOrder AS wo JOIN Ticket AS t ON wo.ticket_id = t.id WHERE t.caller_id = :current_contact_id]]></constant>
+		<constant id="PORTAL_WORKORDER_DISPLAY_POWERUSER_QUERY" xsi:type="string" _delta="define"><![CDATA[SELECT WorkOrder]]></constant>
+	</constants>
+	<user_rights>
+		<groups>
+		</groups>
+		<profiles>
+		</profiles>
+	</user_rights>
+</itop_design>
