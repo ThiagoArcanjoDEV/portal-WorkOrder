@@ -1,9 +1,6 @@
-/**
- * CREATED BY Thiago Arcanjo
- *
- * Added new tab in Portal to show Work Orders
- * The default filter show the Work Orders for tickets where the current user is the caller, if a PowerUser show all Work Orders.
- */
+// CREATED BY Thiago Arcanjo
+// Added new tab in Portal to show Work Orders
+// The default filter show the Work Orders for tickets where the current user is the caller, if a PowerUser show all Work Orders.
 
 - First: Copy this folder to extensions folder in iTop root path.
 - Second: Move portal/index.php to iTop root path, overwrite the old index.php file.
